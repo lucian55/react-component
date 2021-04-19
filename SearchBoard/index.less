@@ -1,0 +1,52 @@
+.search-board{
+    margin-bottom: 16px;
+    position: relative;
+    padding-right: 150px;
+    .ant-form{
+        .ant-form-item{
+            margin-bottom: 8px;
+            min-width: 180px;
+            .ant-picker{
+                width: 100%;
+            }
+            .ant-select{
+                min-width: 180px;
+            }
+        }
+    }
+    &-options{
+        width: 150px;
+        position: absolute;
+        right: 0;
+        &-search{
+            margin-right: 16px;
+        }
+    }
+    .form-radio{
+        display: block;
+        width: 100%;
+        .ant-form-item-label{
+            min-width: 100px;
+            text-align: left;
+        }
+        .ant-radio-button-wrapper{
+            border: none;
+            font-size: 12px;
+            &::before{
+                display: none;
+            }
+            &:not(:last-of-type){
+                margin-right: 8px;
+            }
+        }
+    }
+    .form-phone{
+        .ant-select{
+            width: 80px;
+            min-width: 0!important;
+        }
+        .ant-input{
+            width: calc(100% - 80px);
+        }
+    }
+}
